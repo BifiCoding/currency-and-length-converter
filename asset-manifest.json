@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/currency-and-length-converter/static/css/main.2dfd3b1e.css",
+    "main.js": "/currency-and-length-converter/static/js/main.62e786ea.js",
+    "static/media/Betm-SemiLight.ttf": "/currency-and-length-converter/static/media/Betm-SemiLight.2ec60d9a3e80c736baa7.ttf",
+    "static/media/Betm-SemiLight.woff": "/currency-and-length-converter/static/media/Betm-SemiLight.e0f7600a82ec62d8f3e9.woff",
+    "static/media/Betm-SemiLight.woff2": "/currency-and-length-converter/static/media/Betm-SemiLight.be9ecde9d9734fa96454.woff2",
+    "index.html": "/currency-and-length-converter/index.html",
+    "main.2dfd3b1e.css.map": "/currency-and-length-converter/static/css/main.2dfd3b1e.css.map",
+    "main.62e786ea.js.map": "/currency-and-length-converter/static/js/main.62e786ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dfd3b1e.css",
+    "static/js/main.62e786ea.js"
+  ]
+}
