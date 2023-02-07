@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Betm';
+  src: local('Betm Semi Light'), local('Betm-Semi-Light'),
+      url('./fonts/Betm-SemiLight.woff2') format('woff2'),
+      url('./fonts/Betm-SemiLight.woff') format('woff'),
+      url('./fonts/Betm-SemiLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
+  background: rgb(255,189,190);
+  background: linear-gradient(147deg, rgba(255,189,190,1) 11%, rgba(24,147,253,1) 94%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.content{
+  display: flex;
+  min-height: 70vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.currency-block{
+  height: 500px;
+  width: 300px;
+  margin-right: 8%;
+  box-shadow: 6px 10px 22px 0px rgb(66 68 90 / 62%);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.title{
+  display: flex;
+  color: #ffff;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  font-family: 'Betm'; 
+  font-weight: 300;
+  letter-spacing: 1.3px;
+}
+
+.currency-child-from{
+  height: 50%;
+  background: rgb(254,164,158);
+  background: linear-gradient(32deg, rgba(254,164,158,1) 11%, rgba(249,87,74,1) 70%);
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+.currency-child-to{
+  height: 50%;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 0 0 10px 10px;
+}
+
+.currency-info{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+
+#toCurrencyText{
+  color:#ff7574;
+}
+
+
+.length-block{
+  height: 500px;
+  width: 300px;
+  box-shadow: 6px 10px 22px 0px rgb(66 68 90 / 62%);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.length-child-from{
+  height: 50%;
+  background: rgb(110,207,252);
+  background: linear-gradient(32deg, rgba(110,207,252,1) 11%, rgba(21,153,255,1) 70%);
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+.length-child-to{
+  height: 50%;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 0 0 10px 10px;
+}
+
+.length-info{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+
+.input {
+  max-width: 120px;
+  height: 70px;
+  font-size: 50px;
+  background: none;
+  border: 0;
+  color: #ffffff;
+  border-bottom: 1.5px solid #ffffff;
+  font-family: 'Betm';
+  font-weight: 300;
+}
+input:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+select {
+  background: none;
+  border: 0;
+  width: 90px;
+  height: 70px;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: 'Betm';
+  font-weight: 300;
+}
+
+select:active{
+  background: none;
+  border: 0;
+  width: 90px;
+  height: 70px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+#toLengthText{
+  color: #39acfc;
+}
+
+
+@media screen and (max-width: 600px) {
+  .content{
+    display: block;
+
   }
-  to {
-    transform: rotate(360deg);
+  .currency-block{
+    margin-top: 60px;
+  }
+  .length-block{
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  .main{
+    height: 100%;
   }
 }

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Betm';
+    src: local('Betm Semi Light'), local('Betm-Semi-Light'),
+        url('Betm-SemiLight.woff2') format('woff2'),
+        url('Betm-SemiLight.woff') format('woff'),
+        url('Betm-SemiLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
